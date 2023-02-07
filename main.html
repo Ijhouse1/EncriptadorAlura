@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <ul>
+                <li>
+                    <h1><img src="Logo.png" alt=""></h1>
+                </li>
+                <li>
+                    <!--<img src="Logo-2.png" alt="content">-->
+                   <h2>ENCRIPTADOR DE TEXTO </h2>
+                </li>
+            </ul>           
+
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="seccionPrincipal">
+                <textarea class="textoIngresado" cols="30" rows="10" required placeholder="Ingrese su mensaje" onfocus="this.placeholder=''" onblur="this.placeholder='Ingrese su mensaje'"></textarea>
+                <div>
+                    <button id="btn" class="btn-encriptar" onclick="btnEncriptar()">ENCRITAR</button>
+                    <button id="btn" class="btn-desencriptar" onclick="btnDesencriptar()">DESENCRITAR</button>
+                </div>
+    
+            </section>
+
+            <section class="seccionSecundaria">
+                
+                <textarea class="textoMostrado" cols="30" rows="10" required placeholder="Sin texto aún" onfocus="this.placeholder=''" onblur="this.placeholder='Ningun mensaje ha sido encontrdo'" readonly></textarea>
+                <img src="Muñeco.png" alt="imagen de un muñeco con lupa">
+                <div>
+                    <button id="btn" class="btn-copiar" onclick="copiar()">COPIAR</button>
+                </div>
+               
+            </section>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <img src="Frame 6.png" alt="">
+        <p class="copyright">&copy Copyright Isaac Castro - 2023</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
